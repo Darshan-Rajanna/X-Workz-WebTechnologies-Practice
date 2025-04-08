@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Sibling Selector</title>
+  <style>
+    div ~ p {
+      border: 1px solid red;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>General Sibling Selector: div ~ p</h2>
+
+  <div>This is a div</div>
+  <p>This comes after div. ✅</p>
+  <span>I'm a span</span>
+  <p>This also comes after div. ✅</p>
+
+  <hr>
+
+  <p>This comes before div. ❌</p>
+</body>
+</html>
