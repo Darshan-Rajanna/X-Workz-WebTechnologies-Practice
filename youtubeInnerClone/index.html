@@ -11,116 +11,101 @@
     <script src="https://kit.fontawesome.com/a56979689b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="nav1">
-        <a href="index.html"><img src="Youtube.png" alt="Home" class="home"></a>
-        <input type="text" placeholder="Search" class="search_bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fas fa-microphone"></i>
-        <img src="profile.png" alt="Profile" class="profile">
-    </div>
 
+<body>
+    <div class="nav">
+        <div class="nav-section left">
+            <i class="fa-solid fa-bars menu"></i>
+            <a href="index.html"><img src="Youtube.png" alt="Home" class="home"></a>
+        </div>
+    
+        <div class="nav-section center">
+            <div style="position: relative;">
+                <input type="text" placeholder="Search" class="search_bar">
+                <i class="fa-solid fa-magnifying-glass search_icon" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);"></i>
+            </div>
+            <i class="fas fa-microphone mic"></i>
+        </div>
+    
+        <div class="nav-section right">
+            <i class="fa-solid fa-bell bell"></i>
+            <img src="profile.png" class="user">
+        </div>
+    </div>    
     <div class="big_vid">
         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-        <h3>
-            1 in a Trillion Football Moments
-        </h3>
+        <h3>1 in a Trillion Football Moments</h3>
+    
         <div class="vid_info">
             <img src="profile.png" alt="Profile" class="profile2">
             <div class="vid_details">
-                <h4>Channel Name</h4>
+                <h4>
+                    Channel Name <i class="fa-solid fa-circle-check verified-icon"></i>
+                </h4>
                 <p>1.5M views • 2 days ago</p>
-                <button class="subscribe">Subscribe</button>
+            </div>
+            <button class="subscribe">Subscribe</button>
+    
+            <div class="actions">
                 <div class="like">
-                    <i class="fa-solid fa-thumbs-up"></i><span>  |  </span>
+                    <i class="fa-solid fa-thumbs-up"></i><span>1.7M</span>
                     <i class="fa-solid fa-thumbs-down"></i>
                 </div>
+                <button class="share"><i class="fa-solid fa-share"></i></button>
             </div>
-            
-            <div class="share">
-                <button><i class="fa-solid fa-share"></i></button>
-            </div>
-            
         </div>
+    
         <div class="vid_data">
             <p><strong>2.6M views | 3 days ago</strong></p>
             <div class="vid_desc">
-                <p>this video is brought to you by Shanthanu, created by Darshan R, this is about the Youtube inner page
-                    clone just doing with basic understanding of the HTML tags please don't scold me fot following anny
-                    rules, standards and all</p>
+                <p>This video is brought to you by Shanthanu, created by Darshan R. This is a basic YouTube inner page clone using HTML.</p>
             </div>
         </div>
     </div>
-
-
-
+    
     <div class="left_scroll">
-        <table>
-
-            <tr>
-                <td>
-                    <div class="vid">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
-                        <div class="vid_detail1">
-                            <h4>Video Title 1</h4>
-                            <p>Channel Name</p>
-                            <p>1.2M views • 3 days ago</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="vid">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
-                        <div class="vid_detail1">
-                            <h4>Video Title 2</h4>
-                            <p>Channel Name</p>
-                            <p>800K views • 5 days ago</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="vid">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
-                        <div class="vid_detail1">
-                            <h4>Video Title 2</h4>
-                            <p>Channel Name</p>
-                            <p>800K views • 5 days ago</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="vid">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
-                        <div class="vid_detail1">
-                            <h4>Video Title 2</h4>
-                            <p>Channel Name</p>
-                            <p>800K views • 5 days ago</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="vid">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
-                        <div class="vid_detail1">
-                            <h4>Video Title 2</h4>
-                            <p>Channel Name</p>
-                            <p>800K views • 5 days ago</p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-
-
+        <div class="buttons">
+            <button class="waste1">All</button>
+            <button class="waste1">Anime</button>
+            <button class="waste1">Movies</button>
+        </div>
+        <div class="video_list">
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+                <div class="vid_detail1">
+                    <h4>Video Title <i class="fa-solid fa-circle-check verified-icon"></i></h4>
+                    <p>Channel Name</p>
+                    <p>1.2M views • 3 days ago</p>
+                </div>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+                <div class="vid_detail1">
+                    <h4>Video Title <i class="fa-solid fa-circle-check verified-icon"></i></h4>
+                    <p>Channel Name</p>
+                    <p>1.2M views • 3 days ago</p>
+                </div>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+                <div class="vid_detail1">
+                    <h4>Video Title <i class="fa-solid fa-circle-check verified-icon"></i></h4>
+                    <p>Channel Name</p>
+                    <p>1.2M views • 3 days ago</p>
+                </div>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
+                <div class="vid_detail1">
+                    <h4>Video Title <i class="fa-solid fa-circle-check verified-icon"></i></h4>
+                    <p>Channel Name</p>
+                    <p>1.2M views • 3 days ago</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
+    
 </body>
 
 </html>
